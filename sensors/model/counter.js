@@ -6,7 +6,7 @@ class Counter extends SensorType {
     super({
       name: name || crypto.randomBytes(5).toString('hex'),
       maxVariation:  0.2,
-      intervalInSeconds: 1,
+      intervalInSeconds: 60,
     })
   }
 
