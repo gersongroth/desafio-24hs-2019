@@ -25,8 +25,8 @@ class Counter extends SensorType {
   }
 
   getErrorCode() {
-    if(Math.random() > 0.99) {
-      return 101;
+    if(Math.random() > 0.95) {
+      return Math.floor(Math.random() * 17 + 101); // 17 codigos de erro
     }
 
     return undefined;

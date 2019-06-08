@@ -40,6 +40,10 @@ class Main {
     data.sensorType = undefined;
     data.stop = undefined;
     data.errorCounter = undefined;
+    if(data.errorCode) {
+      data.defect = undefined;
+      data.error = true;
+    }
 
     axios.post('http://localhost:3000/sensor', data)
       .then((res) => {
